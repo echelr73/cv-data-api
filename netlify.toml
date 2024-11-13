@@ -1,9 +1,10 @@
 [build]
   functions = "functions"
+  included_files = ["functions/data.json"]
 
 [functions]
   directory = "functions"
-  included_files = ["data.json"]
+  included_files = ["functions/data.json"]
 
 [dev]
   functions = "functions"
