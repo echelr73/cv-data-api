@@ -4,7 +4,7 @@ const path = require('path');
 exports.handler = async function(event, context) {
   try {
     // Ruta al archivo JSON dentro del proyecto
-    const filePath = path.join(__dirname, '../cv-data.json');
+    const filePath = path.join(__dirname, '../../cv-data.json');
     
     // Leer el archivo y devolverlo como JSON
     const fileContents = fs.readFileSync(filePath, 'utf8');
