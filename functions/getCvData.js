@@ -7,13 +7,12 @@ exports.handler = async function(event, context) {
     const filePath = path.join(__dirname, '../cv-data.json');
     
     // Leer el archivo y devolverlo como JSON
-    const fileContents = fs.readFileSync(filePath, 'utf8');
-    const data = JSON.parse(fileContents);
+    const data = fs.readFileSync(filePath, 'utf8');
     
     // Responder con el JSON de datos
     return {
       statusCode: 200,
-      body: JSON.stringify(data),
+      body: data,
     };
   } catch (error) {
     console.error('Error al leer el archivo JSON', error);
