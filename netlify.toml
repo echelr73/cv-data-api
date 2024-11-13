@@ -4,6 +4,7 @@
 
 [functions]
   directory = "functions"
+  included_files = ["functions/cv-data.json"]
 
 [dev]
   functions = "functions"
