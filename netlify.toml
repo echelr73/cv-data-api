@@ -1,10 +1,10 @@
 [build]
   functions = "functions"
-  included_files = ["functions/cv-data.json"]
+  included_files = ["functions/cv-data.json", "functions/privacyPolicy-data.json"]
 
 [functions]
   directory = "functions"
-  included_files = ["functions/cv-data.json"]
+  included_files = ["functions/cv-data.json", "functions/privacyPolicy-data.json"]
 
 [dev]
   functions = "functions"
