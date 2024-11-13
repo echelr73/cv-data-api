@@ -1,5 +1,8 @@
 [build]
   functions = "functions"
 
+[functions]
+  included_files = ["data.json"]
+
 [dev]
   functions = "functions"
