@@ -1,10 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 
+const filePath = require('data.json')
+
 exports.handler = async function(event, context) {
   try {
     // Ruta al archivo JSON dentro del proyecto
-    const filePath = path.join(__dirname, 'data.json');
+    //const filePath = path.join(__dirname, 'data.json');
     
     // Leer el archivo y devolverlo como JSON
     const data = fs.readFileSync(filePath, 'utf8');
